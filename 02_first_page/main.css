@@ -31,3 +31,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+nav a {
+    font-size:20px;
+}
