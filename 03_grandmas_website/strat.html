@@ -25,7 +25,7 @@
             <img src="img/logo.svg" alt="main icon">
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse"
-        data-target="#myNavbar">
+                data-target="#myNavbar">
             <span class="toggler-icon">
                 <i class="fas fa-bars"></i>
             </span>
@@ -57,17 +57,18 @@
                     <p class="mb-0">+ 123 456 789</p>
                 </div>
                 <!--single info-->
-                <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+                <div id="cart-info"
+                     class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
                     <span class="cart-info__icon mr-lg-3">
                       <i class="fas fa-shopping-cart"></i>
                     </span>
                     <p class="mb-0 text-capitalize">
-                      <span id="item-count">2</span>
-                      items - $
-                      <span class="item-total">
-                          10.49
+                        <span id="item-count">2</span>
+                        items - $
+                        <span class="item-total">
+                          20.55
                       </span>
-                   </p>
+                    </p>
                 </div>
             </div>
         </div>
@@ -76,14 +77,59 @@
     <!--banner-->
     <div class="container-fluid">
         <div class="row max-height justify-content-center align-items-center">
-          <div class="col-10 mx-auto banner text-center">
-              <h1 class="text-capitalize">
-                  welcome to <strong class="banner-title">grandma's</strong>
-              </h1>
-              <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
-          </div>
+            <div class="col-10 mx-auto banner text-center">
+                <h1 class="text-capitalize">
+                    welcome to <strong class="banner-title">grandma's</strong>
+                </h1>
+                <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+            </div>
             <!--store-->
+            <!--cart-->
+            <div class="cart" id="cart">
+                <!--cart item-->
+                <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+                    <img src="img-cart/cake-2.jpeg" class="img-fluid rounded-circle" alt="" id="item-img">
+                    <div class="item-text">
+                        <p id="cart-item-title" class="font-weight-bold mb-0">cart-item</p>
+                        <span>$</span>
+                        <span id="cart-item-price" class="cart-item-price mb-0">10.99</span>
+                    </div>
+                    <a href="#" id="cart-item-remove" class="cart-item-remove">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </div>
+                <!--end of cart item-->
 
+                <!--cart item-->
+                <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+                    <img src="img-cart/cupcake-1.jpeg" class="img-fluid rounded-circle " alt="" id="item-img">
+                    <div class="item-text">
+                        <p id="cart-item-title" class="font-weight-bold mb-0">cart-item</p>
+                        <span>$</span>
+                        <span id="cart-item-price" class="cart-item-price mb-0">10.99</span>
+                    </div>
+                    <a href="#" id="cart-item-remove" class="cart-item-remove">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </div>
+                <!--end of cart item-->
+
+                <!--total-->
+                <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+                    <h5>total</h5>
+                    <h5>$
+                        <strong id="cart-total" class="font-weight-bold">20.00</strong>
+                    </h5>
+                </div>
+                <!--end of total-->
+
+                <!--cart buttons-->
+                <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+                    <a href="#" id="clear-cart" class="btn btn-black text-uppercase">clear cart</a>
+                    <a href="#" id="clear-cart" class="btn btn-pink text-uppercase">checkout</a>
+                </div>
+                <!--end of buttons-->
+            </div>
         </div>
     </div>
     <!--end of banner-->
@@ -95,9 +141,12 @@
     <div class="container">
         <div class="row">
             <div class="col-10 mx-auto col-md-6 my-5">
-                <h1 class="text-capitalize">about <srtong class="banner-title">us</srtong></h1>
+                <h1 class="text-capitalize">about
+                    <srtong class="banner-title">us</srtong>
+                </h1>
                 <p class="my-4 text-muted w-75">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, blanditiis commodi cumque eligendi excepturi laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, blanditiis commodi cumque eligendi
+                    excepturi laborum.
                 </p>
                 <a href="#" class="btn btn-black text-uppercase">explore</a>
             </div>
@@ -125,7 +174,7 @@
         <div class="row">
             <div class="col-lg-8 mx-auto d-flex justify-content-around sortBtn flex-wrap">
                 <a href="#" class="btn btn-black text-uppercase filter-btn m-2"
-                data-filter="all">all</a>
+                   data-filter="all">all</a>
 
                 <a href="#" class="btn btn-black text-uppercase filter-btn m-2"
                    data-filter="all">cakes</a>
@@ -174,7 +223,8 @@
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
                             <h5 id="store-item-sweet">sweet item</h5>
-                            <h5 id="store-item-sweet-value">$ <strong id="store-item-sweet-price" class="font-weight-bold">5</strong></h5>
+                            <h5 id="store-item-sweet-value">$ <strong id="store-item-sweet-price"
+                                                                      class="font-weight-bold">5</strong></h5>
 
                         </div>
                     </div>
@@ -197,7 +247,8 @@
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
                             <h5 id="store-item-cupcake">cupcake item</h5>
-                            <h5 id="store-item-cupcake-value">$ <strong id="store-item-cpucake-price" class="font-weight-bold">5</strong></h5>
+                            <h5 id="store-item-cupcake-value">$ <strong id="store-item-cpucake-price"
+                                                                        class="font-weight-bold">5</strong></h5>
 
                         </div>
                     </div>
@@ -220,7 +271,8 @@
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
                             <h5 id="store-item-name">doughnut item</h5>
-                            <h5 id="store-item-value">$<strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+                            <h5 id="store-item-value">$<strong id="store-item-price" class="font-weight-bold">5</strong>
+                            </h5>
                         </div>
                     </div>
                 </div>
@@ -242,7 +294,8 @@
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
                             <h5 id="store-item-sweet">sweet item</h5>
-                            <h5 id="store-item-sweet-value">$ <strong id="store-item-sweet-price" class="font-weight-bold">10</strong></h5>
+                            <h5 id="store-item-sweet-value">$ <strong id="store-item-sweet-price"
+                                                                      class="font-weight-bold">10</strong></h5>
 
                         </div>
                     </div>
@@ -265,7 +318,8 @@
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
                             <h5 id="store-item-cupcake">cupcake item</h5>
-                            <h5 id="store-item-cupcake-value">$ <strong id="store-item-cpucake-price" class="font-weight-bold">10</strong></h5>
+                            <h5 id="store-item-cupcake-value">$ <strong id="store-item-cpucake-price"
+                                                                        class="font-weight-bold">10</strong></h5>
 
                         </div>
                     </div>
@@ -288,7 +342,8 @@
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
                             <h5 id="store-item-name">doughnut item</h5>
-                            <h5 id="store-item-value">$<strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+                            <h5 id="store-item-value">$<strong id="store-item-price"
+                                                               class="font-weight-bold">10</strong></h5>
                         </div>
                     </div>
                 </div>
@@ -311,7 +366,8 @@
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
                             <h5 id="store-item-sweet">sweet item</h5>
-                            <h5 id="store-item-sweet-value">$ <strong id="store-item-sweet-price" class="font-weight-bold">15</strong></h5>
+                            <h5 id="store-item-sweet-value">$ <strong id="store-item-sweet-price"
+                                                                      class="font-weight-bold">15</strong></h5>
 
                         </div>
                     </div>
@@ -334,7 +390,8 @@
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
                             <h5 id="store-item-cupcake">cupcake item</h5>
-                            <h5 id="store-item-cupcake-value">$ <strong id="store-item-cpucake-price" class="font-weight-bold">15</strong></h5>
+                            <h5 id="store-item-cupcake-value">$ <strong id="store-item-cpucake-price"
+                                                                        class="font-weight-bold">15</strong></h5>
 
                         </div>
                     </div>
@@ -357,7 +414,8 @@
                     <div class="card-body">
                         <div class="card-text d-flex justify-content-between text-capitalize">
                             <h5 id="store-item-name">doughnut item</h5>
-                            <h5 id="store-item-value">$<strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+                            <h5 id="store-item-value">$<strong id="store-item-price"
+                                                               class="font-weight-bold">15</strong></h5>
                         </div>
                     </div>
                 </div>
@@ -378,7 +436,8 @@
             <img src="img/bread-icon.png" alt="bread icon">
             <h6 class="text-uppercase my-3 service-title">bread</h6>
             <p class="w-75 mx-auto text-left service-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium deleniti et inventore non odio praesentium ratione repellat temporibus totam, voluptas.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium deleniti et inventore non odio
+                praesentium ratione repellat temporibus totam, voluptas.
             </p>
         </div>
         <!--end of single service-->
@@ -388,7 +447,8 @@
             <img src="img/cupcake-icon.png" alt="cupcake icon">
             <h6 class="text-uppercase my-3 service-title">cupcake</h6>
             <p class="w-75 mx-auto text-left service-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium deleniti et inventore non odio praesentium ratione repellat temporibus totam, voluptas.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium deleniti et inventore non odio
+                praesentium ratione repellat temporibus totam, voluptas.
             </p>
         </div>
         <!--end of single service-->
@@ -398,7 +458,8 @@
             <img src="img/candy-icon.png" alt="candy icon">
             <h6 class="text-uppercase my-3 service-title">candy</h6>
             <p class="w-75 mx-auto text-left service-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium deleniti et inventore non odio praesentium ratione repellat temporibus totam, voluptas.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium deleniti et inventore non odio
+                praesentium ratione repellat temporibus totam, voluptas.
             </p>
         </div>
         <!--end of single service-->
@@ -516,6 +577,5 @@
 <!--bootstrap js-->
 <script src="../setup/js/bootstrap.bundle.min.js"></script>
 <script src="js/app.js"></script>
-
 </body>
 </html>
