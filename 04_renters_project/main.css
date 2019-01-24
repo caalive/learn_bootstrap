@@ -32,17 +32,53 @@ body {
     background: var(--mainGreen);
     color: var(--mainWhite);
 }
+
 /* end of global */
 
 /* nav bar */
 .navbar {
     background: var(--mainDark) !important;
 }
-.phone-icon{
-    color:var(--mainGreen);
-    border:0.1rem solid var(--mainGreen);
-    padding:0.5rem;
+
+.phone-icon {
+    color: var(--mainGreen);
+    border: 0.1rem solid var(--mainGreen);
+    padding: 0.5rem;
     border-radius: 50%;
 }
+
 /* end of navbar*/
 
+/* banner */
+.banner-info {
+    min-height: calc(100vh - 101px);
+    background:var(--mainGrey);
+    position: relative;
+}
+
+.banner-info__footer {
+    background: var(--mainGreen);
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+}
+
+.banner-img__footer {
+    background: var(--mainDark);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height:104px;
+}
+.banner-img{
+    min-height: calc(100vh - 101px);
+    background:url('img/bannerBcg.jpeg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* end of banner */
