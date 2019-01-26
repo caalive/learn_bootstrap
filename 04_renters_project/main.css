@@ -125,3 +125,9 @@ body {
     display: inline-block;
     color:var(--mainWhite);
 }
+
+/* featured  */
+.featured{
+    background:var(--mainGrey);
+}
+/* end of featured  */
