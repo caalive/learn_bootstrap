@@ -146,4 +146,46 @@ body {
     background: var(--mainWhite);
     color:var(--mainGreen);
 }
-/**/
+/* services section */
+.services{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("img/bannerBcg.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.services-info-text{
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    background: var(--mainGreen);
+    color:var(--mainWhite)!important;
+    margin-bottom: 0;
+    text-decoration: none;
+    text-align: center;
+    padding:0.5rem;
+}
+
+.services-info-text:hover{
+    color:var(--mainDark)!important;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.service-icon{
+    font-size: 2rem;
+    color:var(--mainGreen);
+    padding:0.5rem;
+    border:0.1rem solid var(--mainGreen);
+    margin-right: 1rem;
+    transition: all 1s ease-in-out;
+}
+.service-icon:hover{
+    background:var(--mainGreen);
+    color:var(--mainGrey);
+}
+
+.service-link:hover{
+    color:var(--mainWhite);
+}
